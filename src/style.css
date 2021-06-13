@@ -1,0 +1,45 @@
+.fonte-titulo-navbar .texto-card-home .titulo-card-home .info-obrigatorio{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.cor-titulo-navbar{
+    color: blueviolet!important;
+}
+.card-largura{
+    max-width: 20rem;
+}
+.cor-borda-card{
+    color: black;
+}
+.posicao-imagem-card{
+    object-fit: cover;
+    height: 200px;
+}
+#tiposDePlanos{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.estilo-botao1{
+    background-color: cornflowerblue;
+    font-weight: bold;
+}
+.estilo-botao-modal-contato{
+    background-color: cornflowerblue;
+    font-weight: bold;
+}
+.text-black{
+ text-decoration: none;
+}
+.form-cad1{
+    padding-top: 5rem;
+    width: 50rem;
+
+}
+.info-obrigatorio{
+    font-size: 12px;
+}
+#modal-quem-somos{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+#modal-contato{
+    font-family: 'Baloo Tammudu 2', cursive;
+}

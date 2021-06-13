@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos de Sáude para Todos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand fonte-titulo-navbar cor-titulo-navbar" href="#">Simulador Online - Planos de Saúde</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-quem-somos">sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-contato">fale com a gente</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-fluid bg-secondary mt-5" id="tiposDePlanos">
+            <div class="row justify-content-center">
+                <article class="card cor-borda-card card-largura p-0 m-4 col-12 col-md-6">
+                  <img src="src/img/pp-familia.jpg" class="card-img-top card-posicao-imagem" alt="Planos de saúde para cuidar da sua família.">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Planos para sua família</h5>
+                    <p class="card-text text-center texto-card-home">Cuide de você e de quem você mais ama. Simule agora o plano de saúde ideal para sua família.</p>
+                    <div class="text-center"><a href="formulario-adesao.html" class="btn estilo-botao1 text-white">Simule Agora!</a></div>
+                  </div>
+                </article>
+        
+        
+                <article class="card cor-borda-card card-largura p-0 m-4 col-12 col-md-6">
+                  <img src="src/img/pp-empresa.jpg" class="card-img-top card-posicao-imagem" alt="Planos de saúde para cuidar dos seus funcionários.">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Planos para sua empresa.</h5>
+                    <p class="card-text text-center texto-card-home">O cuidado necessário para seus funcionários, com valores acessíveis para sua empresa.</p>
+                    <div class="text-center"><a href="formulario-empresas.html" class="btn estilo-botao1 text-white">Simule Agora!</a></div>
+                  </div>
+                </article>
+            </div>
+        </section>    
+    </main>
+
+    <footer class="bg-light pb-0">
+        <p class="text-black m-0 p-3 text-center">Todos os direitos reservados. Fale conosco: <a class="text-black" href="mailto:email@cotacoesonline.com.br"> email@cotacoesonline.com.br</a></p>
+    </footer>
+
+
+    <!-- Modal de Contato -->
+    <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <dialog class="modal-content">
+            <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+            </button>
+            </header>
+            <main class="modal-body">
+            <form>
+                <div class="form-group">
+                <label for="formGroupNameInput">Nome Completo</label>
+                <input type="text" class="form-control" id="formGroupNameInput" placeholder="Insira seu nome completo">
+                </div>
+                <div class="form-group">
+                <label for="EmailFormControlInput1">E-mail</label>
+                <input type="email" class="form-control" id="EmailFormControlInput1" placeholder="email@email.com.br">
+                </div>
+                <div class="form-group">
+                <label for="comentFormControlTextarea1">Deixe seu comentário</label>
+                <textarea class="form-control" id="comentFormControlTextarea1" rows="3" placeholder="Insira seu comentário"></textarea>
+                </div>
+            </form>
+            </main>
+            <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            <button type="button" class="btn estilo-botao-modal-contato text-white">Enviar</button>
+            </footer>
+        </dialog>
+        </div>
+    </div>
+    <!-- Modal Quem Somos -->
+    <div class="modal" tabindex="-1" id="modal-quem-somos">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title">Sobre nós</h5>
+            </div>
+            <div class="modal-body text-center">
+              <p>Somos uma corretora de planos de saúde e seguros especializados em soluções que trazem satisfação ao cliente e redução de custos
+                  com elevado padrão de confiaça e qualidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src=""></script>
+
+</body>
+</html>
